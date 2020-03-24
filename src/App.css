@@ -1,0 +1,248 @@
+.show-title {
+  color: white;
+}
+.sidebar {
+  margin-right: 78px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  margin-top: 20px;
+  position: absolute;
+  left: 95%;
+}
+.ss {
+  border-right: 6px solid #013e3e;
+  height: 20vh;
+  margin-right: 15px;
+}
+.aa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.add {
+  background-color: black;
+  min-height: 500px;
+  width: 600px;
+  margin: 40px auto;
+}
+#to-do-form input {
+  background-color: burlywood;
+  padding: 0 20px;
+  border: 0;
+  height: 50px;
+  width: 350px;
+  margin-left: 50px;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+.modal-body {
+  height: 387px;
+  width: 600px;
+  background-color: white;
+  box-shadow: 8px 8px 8px #403939;
+  opacity: 1;
+  border-radius: 10%;
+  border: 3px solid black;
+}
+.modal-center {
+  position: absolute;
+  right: 433px;
+  top: 100px;
+}
+.modal-back {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(19, 18, 18, 0.69);
+}
+.main-body {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  left: 548px;
+  top: 23px;
+  position: absolute;
+  font-size: 1.9rem;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #535050;
+  font-size: 2.1rem;
+}
+.header {
+  padding-top: 15px;
+  background-color: black;
+  width: 100vw;
+  height: 56px;
+  text-align: center;
+  border-radius: 49% 49% 0 0;
+  font-size: 30px;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.area-text {
+  margin-top: 36px;
+  margin-bottom: 40px;
+  margin-left: 80px;
+  box-shadow: 5px 5px 8px grey;
+  height: 150px;
+  width: 427px;
+  word-wrap: break-word;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: medium;
+  padding: 10px;
+  border-radius: 0 14% 0 14%;
+}
+.but-th {
+  background-color: black;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+  height: 44px;
+  padding-top: 26px;
+  border-radius: 0 0 65% 65%;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+.but-th:hover {
+  background: #535050;
+}
+.name {
+  position: absolute;
+  top: 20%;
+  left: 17%;
+  font-family: cursive, Sans-serif;
+  color: black;
+  text-align: "center";
+  font-size: xx-large;
+  padding: 6px;
+  font-style: italic;
+  background-color: white;
+  margin: 40px;
+}
+.name-header {
+  position: absolute;
+  top: 8%;
+  left: 23%;
+  font-family: cursive, sans-serif;
+  color: black;
+  font-size: xx-large;
+  padding: 6px;
+  background-color: white;
+  margin: 30px;
+}
+.role {
+  position: absolute;
+  margin: 40px;
+  padding: 5px;
+  top: 35%;
+  left: 12%;
+  font-family: cursive, sans-serif;
+  font-size: 40px;
+  background-color: white;
+}
+.image-home {
+  color: white;
+  position: absolute;
+  padding-top: 5px;
+  font-size: 1.8rem;
+  right: 6px;
+}
+.image-home:hover {
+  font-size: 2rem;
+}
+.about-objective {
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 13%;
+  font-size: x-large;
+}
+.about-title {
+  font-family: cursive;
+  background-color: white;
+  position: absolute;
+  left: 25%;
+  font-size: xxx-large;
+}
+.about-icon {
+  position: absolute;
+  top: 80%;
+  left: 5%;
+  padding: 10px;
+  margin: 20px;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.about-icon:hover {
+  font-size: 3rem;
+  color: #1414a4;
+}
+.about-content {
+  background-color: black !important ;
+  height: 70vh !important;
+  width: 100vw !important;
+  border-radius: 0 0 100% 0 !important;
+}
+.about-sidebar {
+  margin-right: 78px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  position: absolute;
+  left: 95%;
+}
+.side {
+  width: 300px;
+  height: 60px;
+  background-color: white;
+  color: black;
+  box-shadow: 6px 6px 6px black;
+  padding-top: 10px;
+  border-radius: 0 20px 0 20px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 50px;
+}
+.hover {
+  width: 150px;
+  background-color: black;
+  text-align: center;
+  box-shadow: 2px 2px 2px black;
+  border-radius: 0 20px 0 20px;
+  color: white;
+  margin-left: 80px;
+  margin-top: 20px;
+  padding: 5px;
+}
+.edu-name {
+  width: 200px;
+  padding-left: 100px;
+  font-family: cursive;
+  font-size: 20px;
+  padding-bottom: 5px;
+  padding-top: 60px;
+}
+.skill {
+  background-color: black;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 110px;
+  box-shadow: 5px 5px 5px black;
+  margin-left: 40px;
+  font-family: sans-serif;
+  font-size: 20px;
+  border-radius: 60%;
+  cursor: pointer;
+  color: white;
+}
+.skill:hover {
+  color: black;
+  background-color: white;
+  height: 160px;
+  width: 160px;
+}
