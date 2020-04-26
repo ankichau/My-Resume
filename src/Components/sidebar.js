@@ -7,11 +7,11 @@ const Show = styled.div`
   border: 3px solid ${props => props.color};
   height: 34px;
   border-radius: 20px;
-  margin-right: 5px;
+  margin-right: 4px;
   color: ${props => props.color};
   font-size: 20px;
   padding-right: 40px;
-  padding-left: 20px;
+  padding-left: 8px;
   padding-top: 2px;
 `;
 
@@ -47,7 +47,9 @@ class SideBar extends React.Component {
             onMouseOver={this.handlehover}
             onMouseOut={this.handleout}
           >
-            <div className="image-home">{icon}</div>
+            <div style={{ color: this.props.colorr }} className="image-home">
+              {icon}
+            </div>
             <div>{tt}</div>
             <div>
               {this.state.show && (

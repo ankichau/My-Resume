@@ -21,7 +21,7 @@
   justify-content: space-between;
 }
 .add {
-  background-color: black;
+  background-color: #013e3e;
   min-height: 500px;
   width: 600px;
   margin: 40px auto;
@@ -40,10 +40,9 @@
   height: 387px;
   width: 600px;
   background-color: white;
-  box-shadow: 8px 8px 8px #403939;
-  opacity: 1;
+  z-index: 1;
   border-radius: 10%;
-  border: 3px solid black;
+  border: 3px solid #013e3e;
 }
 .modal-center {
   position: absolute;
@@ -69,12 +68,12 @@
 }
 
 .btn:hover {
-  color: #535050;
+  color: white;
   font-size: 2.1rem;
 }
 .header {
   padding-top: 15px;
-  background-color: black;
+  background-color: #013e3e;
   width: 100vw;
   height: 56px;
   text-align: center;
@@ -98,7 +97,7 @@
   border-radius: 0 14% 0 14%;
 }
 .but-th {
-  background-color: black;
+  background-color: #013e3e;
   font-size: 25px;
   cursor: pointer;
   text-align: center;
@@ -109,14 +108,14 @@
   font-family: "Times New Roman", Times, serif;
 }
 .but-th:hover {
-  background: #535050;
+  background: #013e3e;
 }
 .name {
   position: absolute;
   top: 20%;
   left: 17%;
   font-family: cursive, Sans-serif;
-  color: black;
+  color: #013e3e;
   text-align: "center";
   font-size: xx-large;
   padding: 6px;
@@ -146,7 +145,7 @@
   background-color: white;
 }
 .image-home {
-  color: white;
+  color: black;
   position: absolute;
   padding-top: 5px;
   font-size: 1.8rem;
@@ -180,10 +179,10 @@
 }
 .about-icon:hover {
   font-size: 3rem;
-  color: #1414a4;
+  color: #013e3e;
 }
 .about-content {
-  background-color: black !important ;
+  background-color: #013e3e !important ;
   height: 70vh !important;
   width: 100vw !important;
   border-radius: 0 0 100% 0 !important;
@@ -194,14 +193,14 @@
   flex-direction: column;
   padding-top: 20px;
   position: absolute;
-  left: 95%;
+  left: 97%;
 }
 .side {
   width: 300px;
   height: 60px;
   background-color: white;
   color: black;
-  box-shadow: 6px 6px 6px black;
+  box-shadow: 6px 6px 6px #013e3e;
   padding-top: 10px;
   border-radius: 0 20px 0 20px;
   cursor: pointer;
@@ -210,9 +209,9 @@
 }
 .hover {
   width: 150px;
-  background-color: black;
+  background-color: #013e3e;
   text-align: center;
-  box-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px #013e3e;
   border-radius: 0 20px 0 20px;
   color: white;
   margin-left: 80px;
@@ -221,28 +220,55 @@
 }
 .edu-name {
   width: 200px;
-  padding-left: 100px;
+  padding-left: 140px;
   font-family: cursive;
   font-size: 20px;
   padding-bottom: 5px;
   padding-top: 60px;
+  color: #013e3e;
 }
 .skill {
-  background-color: black;
-  width: 150px;
-  height: 150px;
+  background-color: white;
+  width: 100px;
+  height: 100px;
   margin-bottom: 110px;
-  box-shadow: 5px 5px 5px black;
-  margin-left: 40px;
+  box-shadow: 5px 5px 5px #013e3e;
+  margin-left: 85px;
   font-family: sans-serif;
   font-size: 20px;
   border-radius: 60%;
   cursor: pointer;
-  color: white;
+  color: black;
 }
 .skill:hover {
-  color: black;
+  color: #013e3e;
   background-color: white;
-  height: 160px;
-  width: 160px;
+  height: 105px;
+  width: 105px;
+}
+
+.parallax {
+  background-image: url("./images/profile.png");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.arrow {
+  font-size: 2rem;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+.pet {
+  cursor: pointer;
+}
+.pet:hover {
+  font-size: 21px;
+  color: black;
 }

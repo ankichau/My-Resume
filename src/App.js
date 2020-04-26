@@ -7,7 +7,7 @@ import Hobbies from "./Pages/hobbies";
 import Experience from "./Pages/experience";
 import Home from "./Pages/home";
 import Error from "./Pages/error";
-
+import Projects from "./Pages/petprojects";
 function App() {
   return (
     <>
@@ -17,6 +17,7 @@ function App() {
         <Route exact path="/Education/" component={Education} />
         <Route exact path="/Experience/" component={Experience} />
         <Route exact path="/Hobbies/" component={Hobbies} />
+        <Route exact path="/Projects/" component={Projects} />
         <Route component={Error} />
       </Switch>
     </>

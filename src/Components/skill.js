@@ -3,10 +3,9 @@ import React, { Component } from "react";
 export default class Skill extends Component {
   state = {
     show: false,
-    open: false
   };
   handelopen = () => {
-    this.setState({ show: true });
+    this.setState({ show: !this.state.show });
   };
   render() {
     return (
@@ -15,8 +14,9 @@ export default class Skill extends Component {
           <div
             style={{
               paddingLeft: 1,
-              paddingTop: "37%",
-              textAlign: "center"
+              paddingTop: "26%",
+              textAlign: "center",
+              fontSize: 17,
             }}
           >
             {this.props.title}
@@ -25,12 +25,11 @@ export default class Skill extends Component {
             <div>
               <ul
                 style={{
-                  marginTop: "48%",
-                  marginLeft: 35,
+                  marginTop: "33%",
                   marginBottom: 20,
                   color: "black",
                   fontFamily: "cursive",
-                  fontSize: 15
+                  fontSize: 15,
                 }}
               >
                 {this.props.children}

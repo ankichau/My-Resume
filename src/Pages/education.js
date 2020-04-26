@@ -3,7 +3,7 @@ import Wrapper from "../Components/wrapper";
 import Content from "../Components/content";
 import EduDetails from "../Components/edudetails";
 import { TiUser } from "react-icons/ti";
-import { IoIosBook } from "react-icons/io";
+import { IoIosBook, IoMdMedal } from "react-icons/io";
 import { GoBookmark } from "react-icons/go";
 import SideBar from "../Components/sidebar";
 import ToHome from "../Components/tohome";
@@ -23,15 +23,19 @@ export default class Education extends Component {
                 top: 60,
                 left: 20,
                 width: 700,
-                padding: 20
+                padding: 20,
               }}
             >
               <span
                 style={{
-                  paddingLeft: 100,
+                  background: "white",
+                  paddingLeft: 8,
                   fontFamily: "cursive",
                   fontSize: 40,
-                  textAlign: "center"
+                  textAlign: "center",
+                  color: "black",
+                  paddingRight: 9,
+                  marginLeft: 90,
                 }}
               >
                 College Projects
@@ -41,9 +45,9 @@ export default class Education extends Component {
               <span style={{ padding: 5, fontFamily: "cursive", fontSize: 20 }}>
                 {" "}
                 Smart Screen ​ (MAR 2019 - APR 2019)<br></br>
-                <br></br> Based on simple screen content sharing which can later
-                be used for references at any time Technologies worked on​ -
-                Raspberry Pi, Python, S-FTP protocol.
+                <br></br> Based on simple screen content sharing data, which can
+                later be used for references at any time. Technologies worked
+                on​ - Raspberry Pi, Python, S-FTP protocol.
               </span>
               <br></br>
               <br></br>
@@ -80,13 +84,35 @@ export default class Education extends Component {
               2012 - 2013, BANGALORE
             </EduDetails>
           </div>
-          <div className="about-sidebar" style={{ marginTop: 50 }}>
-            <Line colors="black"></Line>
-            <SideBar title="Experience" icon={<IoIosBook />} color="black" />
-            <SideBar title="About" icon={<TiUser />} color="black" />
+          <div className="about-sidebar" style={{ marginTop: 30 }}>
+            <Line colors="#013e3e"></Line>
+            <SideBar
+              title="Experience"
+              icon={<IoIosBook />}
+              color="#013e3e"
+              colorr="white"
+            />
 
-            <SideBar title="Hobbies" icon={<GoBookmark />} color="black" />
-            <Line colors="black"></Line>
+            <SideBar
+              title="Projects"
+              icon={<IoMdMedal />}
+              color="#013e3e"
+              colorr="white"
+            />
+
+            <SideBar
+              title="Hobbies"
+              icon={<GoBookmark />}
+              color="#013e3e"
+              colorr="white"
+            />
+            <SideBar
+              title="About"
+              icon={<TiUser />}
+              color="#013e3e"
+              colorr="white"
+            />
+            <Line colors="#013e3e"></Line>
           </div>
         </Wrapper>
       </>

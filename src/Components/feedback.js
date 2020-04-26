@@ -14,7 +14,12 @@ export default class FeedBack extends React.Component {
     }
     return (
       <div className="modal-body">
-        <header style={{ display: "flex", justifyContent: "space-between" }}>
+        <header
+          style={{
+            display: "flex",
+            justifyContent: "space-between"
+          }}
+        >
           <span className="header"> FeedBack </span>
           <GoX className="btn" onClick={this.props.onclose} />
         </header>
@@ -35,7 +40,8 @@ export default class FeedBack extends React.Component {
               position: "absolute",
               top: 160,
               left: 150,
-              fontFamily: "cursive"
+              fontFamily: "cursive",
+              color: "#013e3e"
             }}
           >
             Thank You!!

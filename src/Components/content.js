@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Content = styled.div`
   height: ${props => props.height};
   width: ${props => props.width};
-  background: ${props => props.color};
+  background: #013e3e;
   border-radius: ${props => props.bor};
   @media screen and (max-width: 500px) {
     height: 60vh;

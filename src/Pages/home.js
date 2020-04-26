@@ -6,19 +6,20 @@ import SideBar from "../Components/sidebar";
 import myprofile from "../images/profile.png";
 import FeedBack from "../Components/feedback";
 import { TiUser, TiMortarBoard } from "react-icons/ti";
-import { IoIosBook } from "react-icons/io";
+import { IoIosBook, IoMdMedal } from "react-icons/io";
 import { GoBookmark } from "react-icons/go";
+
 import Line from "../Components/line";
 
 export default class Home extends Component {
   state = {
     show: false,
-    open: false
+    open: false,
   };
-  showopen = e => {
+  showopen = (e) => {
     this.setState({ show: true });
   };
-  showclose = e => {
+  showclose = (e) => {
     this.setState({ show: false });
   };
   show = () => {
@@ -34,12 +35,7 @@ export default class Home extends Component {
         <div className={this.state.show && "modal-back"}>
           <div className="main-body">
             <Wrapper>
-              <Content
-                color="#013e3e"
-                height="90vh"
-                width="174vh"
-                bor="0 0 0 60%"
-              >
+              <Content height="90vh" width="174vh" bor="0 0 0 60%">
                 <span className="name-header"> Hey there! </span>
                 <span className="name">I'am Ankita Chauhan</span>
                 <span className="role">
@@ -49,7 +45,7 @@ export default class Home extends Component {
                     style={{
                       fontFamily: "Serif",
                       color: "#013e3e",
-                      fontSize: 30
+                      fontSize: 30,
                     }}
                   >
                     {" "}
@@ -79,7 +75,7 @@ export default class Home extends Component {
                     color: "#013e3e",
                     textAlign: "center",
                     padding: 8,
-                    border: "3px solid #013e3e "
+                    border: "3px solid #013e3e ",
                   }}
                 >
                   Click to drop a feeddback
@@ -91,18 +87,36 @@ export default class Home extends Component {
             </Wrapper>
             <div className="sidebar">
               <Line colors="#013e3e"></Line>
-              <SideBar title="About" icon={<TiUser />} color="#013e3e" />
+              <SideBar
+                title="About"
+                icon={<TiUser />}
+                color="#013e3e"
+                colorr="white"
+              />
               <SideBar
                 title="Education"
                 icon={<TiMortarBoard />}
                 color="#013e3e"
+                colorr="white"
               />
               <SideBar
                 title="Experience"
                 icon={<IoIosBook />}
                 color="#013e3e"
+                colorr="white"
               />
-              <SideBar title="Hobbies" icon={<GoBookmark />} color="#013e3e" />
+              <SideBar
+                title="Projects"
+                icon={<GoBookmark />}
+                color="#013e3e"
+                colorr="white"
+              />
+              <SideBar
+                title="Hobbies"
+                icon={<IoMdMedal />}
+                color="#013e3e"
+                colorr="white"
+              />
               <Line colors="#013e3e"></Line>
             </div>
           </div>
